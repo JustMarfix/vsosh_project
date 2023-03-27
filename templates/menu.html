@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>АИС &laquo;Зачисление в ОУ&raquo; &mdash; Меню</title>
+</head>
+<body>
+    <h1>Тут лежат конфиденциальные данные.</h1>
+    {% if cookie == 1 %}
+            <h1>Вы — админ (есть право на регистрацию новых пользователей)</h1>
+            <br/>
+            <a href="/registration"><-- Создать нового пользователя.</a> <br/>
+    {% else %}
+            <h1>Вы — не админ (нет права регистрировать новых пользователей)</h1>
+            <br/>
+    {% endif %}
+    <a href="/logout"><-- Выйти.</a>
+</body>

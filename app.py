@@ -130,7 +130,7 @@ def restore_by_token(token):
             double_password = request.form["double_password"]
             if password != double_password:
                 return render_template('new-password.html', error='Пароли не совпадают!')
-            cursor.execute(f'''UPDATE users SET password = "{hashlib.sha256(password.encode(encoding = 'UTF-8', errors = 'strict')).hexdigest()}" WHERE login = {username}''')
+            cursor.execute(f'''UPDATE users SET password = "{hashlib.sha256(password.encode(encoding = 'UTF-8', errors = 'strict')).hexdigest()}" WHERE login = "{username}"''')
             conn.commit()
             cursor.execute(f'''DELETE FROM tokens WHERE token = "{token}"''')
             conn.commit()

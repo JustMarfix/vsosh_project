@@ -14,7 +14,7 @@ CREATE TABLE `users` (
   `is_admin` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 INSERT INTO `users` (`id`, `login`, `password`, `email`, `is_admin`) VALUES
-(0, 'test_login', '404cdd7bc109c432f8cc2443b45bcfe95980f5107215c645236e577929ac3e52', 'test@test.com', 1);
+(0, 'test_login', '10a6e6cc8311a3e2bcc09bf6c199adecd5dd59408c343e926b129c4914f3cb01', 'test@test.com', 1);
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`);

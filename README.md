@@ -1,6 +1,6 @@
 # VSOSH InfoSec project
 
-Final report in `report.pdf`
+Depersonalized final report in `report.pdf`
 
 MySQL database creation template in `setup.sql`
 

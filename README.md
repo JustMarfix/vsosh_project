@@ -1,5 +1,7 @@
 # VSOSH InfoSec project
 
+Final report in `report.pdf`
+
 MySQL database creation template in `setup.sql`
 
 ### TODO:
